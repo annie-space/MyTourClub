@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Фото маршрута -->
+        <ImageView
+            android:id="@+id/imageViewRouteDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Фото маршрута"/>
+
+        <!-- Блок с серым фоном -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e0e0e0"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <!-- Название маршрута -->
+            <TextView
+                android:id="@+id/tvRouteNameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название маршрута"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <!-- Дата и Цена -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tvRouteDateDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Дата"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+            <!-- Кнопка для написания отзыва -->
+            <Button
+                android:id="@+id/btnWriteReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Написать отзыв"
+                android:padding="16dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Длительность, Сложность, Количество мест -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconDuration"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/calendar"
+                    android:contentDescription="Длительность"/>
+
+                <TextView
+                    android:id="@+id/tvRouteDurationDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Длительность"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconLength"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/way2"
+                    android:contentDescription="Длина"/>
+
+                <TextView
+                    android:id="@+id/tvRouteLengthDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Длина"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconPlaces"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/quantity"
+                    android:contentDescription="Количество мест"/>
+
+                <TextView
+                    android:id="@+id/tvRoutePlacesDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Количество мест"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Направление, Сложность, Тип -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconDirection"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/direction"
+                    android:contentDescription="Направление"/>
+
+                <TextView
+                    android:id="@+id/tvRouteDirectionDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Направление"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconTyp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/type"
+                    android:contentDescription="Тип"/>
+
+                <TextView
+                    android:id="@+id/tvRouteTypDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тип"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/iconDifficulty"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/complexity"
+                    android:contentDescription="Сложность"/>
+
+                <TextView
+                    android:id="@+id/tvRouteDifficultyDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сложность"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Описание -->
+        <TextView
+            android:id="@+id/tvRouteDescriptionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание маршрута"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Гиды -->
+        <TextView
+            android:id="@+id/tvGuides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Гиды"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvGuide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Гид1: Имя, Телефон"
+            android:textSize="16sp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvGuide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Гид2: Имя, Телефон"
+            android:textSize="16sp"
+            android:paddingTop="8dp"/>
+
+        <!-- Список отзывов -->
+        <TextView
+            android:id="@+id/tvExistingReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отзывы:"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReviews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</ScrollView>

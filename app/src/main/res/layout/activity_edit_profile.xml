@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Заголовок профиля -->
+            <TextView
+                android:id="@+id/tvEditProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Редактировать профиль"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="16dp"/>
+
+            <!-- Имя пользователя (не редактируется) -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Имя"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+            <!-- Дата рождения (не редактируется) -->
+            <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дата рождения"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Email пользователя -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Телефон пользователя -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Телефон"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Группа здоровья -->
+            <EditText
+                android:id="@+id/etHealthGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Группа здоровья"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Пароль -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"
+                android:inputType="textPassword"/>
+
+            <!-- Кнопка сохранения -->
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/btnblue"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

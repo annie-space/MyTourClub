@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Оранжевый цвет заливки -->
+            <stroke android:width="2dp" android:color="@color/gray" /> <!-- Желтая обводка -->
+            <corners android:radius="16dp" /> <!-- Скругленные углы -->
+        </shape>
+    </item>
+</selector>

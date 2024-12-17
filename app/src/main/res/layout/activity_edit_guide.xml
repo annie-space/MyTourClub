@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EditGuideActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvEditGuideTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Редактировать гида"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Телефон"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Опыт"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditSpecialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Специализация"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnSaveGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:backgroundTint="@color/btngreen"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

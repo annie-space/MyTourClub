@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Контейнер для изображения и текста на изображении -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imageViewRoute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center"
+            android:padding="8dp"
+            android:background="#80000000"> <!-- Полупрозрачный черный фон для текста -->
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Название маршрута"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цена маршрута"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Контейнер для длины и длительности маршрута -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iconLength"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="Длина"
+            android:src="@drawable/way2"
+             />
+
+        <TextView
+            android:id="@+id/textViewLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70 км"
+            android:textColor="@android:color/black"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/iconDuration"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:contentDescription="Длительность"
+            android:src="@drawable/calendar"
+            />
+
+        <TextView
+            android:id="@+id/textViewDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 дней"
+            android:textColor="@android:color/black"
+            android:paddingLeft="8dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

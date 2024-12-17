@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TourClub</string>
+    <string name="tour_club">Tour Club</string>
+    <string name="start">Start</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_the_password">Enter the password</string>
+</resources>
